@@ -11,6 +11,7 @@ body {
         sans-serif;
         font-weight: 400;
         font-size: 18px;
+        line-height: 21px;
 
 }
 .wrapper {
@@ -63,7 +64,71 @@ body {
     font-family: 'Roboto Condensed',
     sans-serif;
     font-weight: 400;
-    font-size: 48px;
-    line-height: 56px;
+
     color: $dark-blue;
 }
+
+
+
+// MOB MENU
+
+
+.header__inner.openDone {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: -15px;
+  bottom: 0;
+  width: 300px;
+  background-color: $main;
+  min-height: 500px;
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 28px 10px 15px;
+
+  .header-top {
+    order: 1;
+    border-bottom: none;
+    padding: 0;
+  }
+
+  .header-top--wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .social {
+      order: 2;
+    }
+  }
+
+  .header__btn {
+    margin-bottom: 25px;
+  }
+
+  .header-bottom {
+    text-align: left;
+    padding: 0;
+
+  }
+
+  .menu {
+    color: #fff;
+  }
+
+  .menu__list {
+    &+.menu__list {
+      margin-left: 0;
+    }
+  }
+
+  .sub-menu {
+    display: block;
+    position: inherit;
+    background-color: inherit;
+    color: #fff;
+    padding: 15px 0px 0px 12px !important;
+  }
+}
+
+// MOB MENU

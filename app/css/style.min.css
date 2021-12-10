@@ -113,7 +113,25 @@ body {
 .title {
   font-family: "Roboto Condensed", sans-serif;
   font-weight: 400;
+  font-size: 36px;
+  line-height: 42px;
   color: #20303f;
+  margin-bottom: 30px;
+}
+.title span {
+  font-size: 24px;
+  line-height: 28px;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 400;
+}
+
+.section {
+  padding: 50px 0;
+}
+
+.text {
+  font-size: 18px;
+  line-height: 21px;
 }
 
 .header__inner.openDone {
@@ -122,9 +140,9 @@ body {
   top: 0;
   right: -15px;
   bottom: 0;
-  width: 300px;
+  width: 320px;
   background-color: #2F516D;
-  min-height: 500px;
+  min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -175,26 +193,35 @@ body {
   padding: 15px 0px 0px 12px !important;
 }
 
-.header-intro {
-  max-height: 100vh;
-  overflow: hidden;
-}
-
-.video__inner {
+.header__ful-screen {
   position: relative;
-  padding-bottom: 56.25%;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-image: url(../images/content/header-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .video__media {
-  width: 100%;
-  height: auto;
   position: absolute;
   top: 0;
   left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .header__bg--wrapper {
   position: relative;
+  z-index: 50;
 }
 
 .header__line {
@@ -215,7 +242,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: relative;
 }
 
 .header__inner {
@@ -375,18 +401,75 @@ body {
 .header__title {
   max-width: 516px;
   width: 100%;
-  margin-bottom: 30px;
   font-size: 48px;
   line-height: 56px;
+  padding: 0;
 }
 
 .header__box-text {
   margin-bottom: 30px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   font-weight: 400px;
   font-size: 22px;
   line-height: 24px;
   color: #20303f;
+}
+
+.transfers {
+  background-color: #2F516D;
+  color: #E5E9EE;
+}
+
+.transfers__title {
+  color: #E5E9EE;
+  padding-left: 90px;
+}
+
+.transfers__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid #E5E9EE;
+  padding-bottom: 30px;
+}
+
+.transfers__item {
+  max-width: 858px;
+  width: 100%;
+  padding-right: 10px;
+  padding-left: 90px;
+}
+
+.transfers__img {
+  width: 450px;
+  height: 337px;
+}
+
+.transfers__text {
+  margin-bottom: 28px;
+}
+
+.transfers__contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.transfers__contacts--text {
+  padding: 10px 0;
 }
 
 @media (max-width: 1200px) {
@@ -409,6 +492,19 @@ body {
     font-size: 18px;
     line-height: 21px;
   }
+
+  .transfers__title {
+    padding-left: 0;
+  }
+
+  .transfers__item {
+    padding-left: 0;
+  }
+
+  .transfers__img {
+    width: 355px;
+    height: 266px;
+  }
 }
 @media (max-width: 1000px) {
   .header-top__work-time {
@@ -422,8 +518,21 @@ body {
   }
 
   .header__box {
-    margin-top: 40px;
+    margin-top: 90px;
     padding: 15px 30px;
+  }
+
+  .transfers__img {
+    display: none;
+  }
+
+  .title {
+    font-size: 28px;
+    line-height: 33px;
+  }
+  .title span {
+    font-size: 20px;
+    line-height: 22px;
   }
 }
 @media (max-width: 850px) {
@@ -439,8 +548,8 @@ body {
   }
 
   .text {
-    font-size: 14px;
-    line-height: 16px;
+    font-size: 16px;
+    line-height: 18px;
   }
 
   .header__box {
@@ -465,14 +574,6 @@ body {
     display: block;
   }
 
-  .header-intro {
-    background-image: url(../images/content/header-bg.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 500px;
-  }
-
   .video__media {
     display: none;
   }
@@ -482,7 +583,7 @@ body {
     max-width: 380px;
   }
 }
-@media (max-width: 750px) {
+@media (max-width: 420px) {
   .header__box {
     max-width: 300px;
     padding: 14px 25px;

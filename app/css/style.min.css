@@ -61,6 +61,7 @@ html,
 body {
   height: 100%;
   font-family: "Roboto", sans-serif;
+  color: #20303f;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
@@ -132,6 +133,32 @@ body {
 .text {
   font-size: 18px;
   line-height: 21px;
+}
+
+.global__gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.global__gallery-item {
+  -webkit-filter: drop-shadow(0px 0px 26.8816px #000000);
+          filter: drop-shadow(0px 0px 26.8816px #000000);
+  border-radius: 5px;
+  margin: 0 10px 50px;
+  max-width: 387px;
+  max-height: 275px;
+}
+.global__gallery-item img {
+  border: 1px solid #fff;
+  width: 387px;
+  height: 275px;
+  border-radius: 5px;
+  position: relative;
 }
 
 .header__inner.openDone {
@@ -537,6 +564,86 @@ body {
   line-height: 28px;
 }
 
+.residence {
+  background-color: #E5E9EE;
+}
+
+.residence__title {
+  padding-left: 90px;
+}
+
+.residence__suptitle {
+  padding-left: 90px;
+  margin-bottom: 50px;
+}
+
+.residence__inners {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border-bottom: 2px solid #2F516D;
+}
+
+.residence__items {
+  text-align: center;
+  width: 320px;
+  padding: 0 10px;
+  margin-bottom: 50px;
+}
+
+.residence__items-img {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+
+.residence__inner {
+  padding-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.residence__item {
+  width: 630px;
+}
+
+.residence__item-text {
+  padding-left: 90px;
+  margin-bottom: 20px;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.residence__item-li {
+  padding-left: 90px;
+  margin-bottom: 15px;
+  position: relative;
+}
+.residence__item-li::before {
+  position: absolute;
+  content: "";
+  left: 80px;
+  top: 8px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #20303f;
+}
+
+.residence__btn {
+  margin-left: 90px;
+  margin-top: 50px;
+}
+
 @media (max-width: 1200px) {
   .header__inner {
     padding-left: 16px;
@@ -558,17 +665,28 @@ body {
     line-height: 21px;
   }
 
-  .transfers__title {
-    padding-left: 0;
-  }
-
-  .transfers__item {
-    padding-left: 0;
-  }
-
   .transfers__img {
     width: 355px;
     height: 266px;
+  }
+
+  .transfers__title,
+.transfers__item,
+.residence__title,
+.residence__suptitle,
+.residence__item-text {
+    padding-left: 0;
+  }
+
+  .residence__item-li {
+    padding-left: 0;
+  }
+  .residence__item-li::before {
+    left: -10px;
+  }
+
+  .residence__btn {
+    margin-left: 0;
   }
 }
 @media (max-width: 1000px) {
@@ -604,6 +722,23 @@ body {
     font-size: 18px;
     line-height: 21px;
   }
+
+  .residence__item {
+    width: 480px;
+  }
+
+  .residence__inners {
+    display: none;
+  }
+
+  .residence__inner {
+    padding-top: 0;
+  }
+
+  .residence__suptitle {
+    border-bottom: 2px solid #2F516D;
+    padding-bottom: 30px;
+  }
 }
 @media (max-width: 850px) {
   .header__title {
@@ -624,6 +759,23 @@ body {
 
   .header__box {
     max-width: 636px;
+  }
+
+  .residence__inner {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .residence__inner ul {
+    padding: 0;
+  }
+
+  .residence__item {
+    margin-bottom: 30px;
+    text-align: center;
+    width: 100%;
+  }
+  .residence__item-li::before {
+    display: none;
   }
 }
 @media (max-width: 750px) {
@@ -654,6 +806,10 @@ body {
   }
 }
 @media (max-width: 450px) {
+  .section {
+    padding: 30px 0;
+  }
+
   .header__box {
     max-width: 300px;
     padding: 14px 25px;
@@ -664,6 +820,15 @@ body {
     height: 175px;
   }
   .transfers__gallery-item img {
+    width: 246px;
+    height: 175px;
+  }
+
+  .global__gallery-item {
+    width: 246px;
+    height: 175px;
+  }
+  .global__gallery-item img {
     width: 246px;
     height: 175px;
   }

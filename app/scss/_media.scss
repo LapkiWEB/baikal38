@@ -37,13 +37,15 @@
   .transfers__item,
   .residence__title,
   .residence__suptitle,
-  .excursion__inner {
+  .excursion__inner,
+  .atv__wrapper {
     padding-left: 25px;
   }
 
-.residence__item-text{
-  padding: 0;
-}
+  .residence__item-text {
+    padding: 0;
+  }
+
   .residence__item-li {
     padding-left: 0;
 
@@ -57,6 +59,13 @@
     margin-left: 0;
   }
 
+  .atv__img {
+    img {
+      width: 268px;
+      height: 205px;
+    }
+
+  }
 
 }
 
@@ -182,6 +191,9 @@
   .video__media {
     display: none;
   }
+  .atv__img{
+    display: none;
+  }
 
 }
 
@@ -189,12 +201,13 @@
   .header__box {
     max-width: 380px;
   }
-    .excursion__text {
-      span {
-        display: block;
-        padding-top: 15px;
-      }
+
+  .excursion__text {
+    span {
+      display: block;
+      padding-top: 15px;
     }
+  }
 }
 
 @media(max-width: 550px) {
@@ -250,6 +263,7 @@
     max-width: 300px;
     padding: 14px 25px;
   }
+
   .transfers__gallery-text {
     font-size: 18px;
     line-height: 21px;

@@ -1,12 +1,3 @@
-// @media(max-width: 1300px) {
-//   .transfers__gallery {
-//     justify-content: space-around;
-//   }
-
-// }
-
-
-
 @media(max-width: 1200px) {
   .header__inner {
     padding-left: 16px;
@@ -31,32 +22,6 @@
   .transfers__img {
     width: 355px;
     height: 266px;
-  }
-
-  .transfers__title,
-  .transfers__item,
-  .residence__title,
-  .residence__suptitle,
-  .excursion__inner,
-  .atv__wrapper {
-    padding-left: 25px;
-  }
-
-  .residence__item-text {
-    padding: 0;
-  }
-
-  .residence__item-li {
-    padding-left: 0;
-
-    &::before {
-      left: -10px;
-
-    }
-  }
-
-  .residence__btn {
-    margin-left: 0;
   }
 
   .atv__img {
@@ -118,12 +83,98 @@
     border-bottom: 2px solid $main;
     padding-bottom: 30px;
   }
+
+
+  .container-block {
+    padding: 0 40px;
+  }
+
+  .transfers__title,
+  .transfers__item,
+  .residence__title,
+  .residence__suptitle,
+  .excursion__inner,
+  .atv__wrapper {
+    padding-left: 25px;
+  }
+
+  .residence__item-text {
+    padding-left: 25px;
+  }
+
+  .residence__item-li {
+    padding-left: 0;
+
+    &::before {
+      left: -10px;
+
+    }
+  }
+
+  .residence__btn {
+    margin-left: 25px;
+  }
+
 }
 
 @media(max-width: 900px) {
   .transfers__gallery {
     display: none;
   }
+
+
+
+
+
+
+
+
+  .contacts__phone-btn {
+    margin-bottom: 30px;
+    &+.contacts__phone-btn {
+      margin-left: 0;
+    }
+  }
+
+  .contacts__phone {
+    width: 200px;
+  }
+
+  .contacts__item {
+    padding-top: 10px;
+    width: 200px;
+    justify-content: center;
+    align-items: flex-start;
+    .social{
+      padding-top: 20px;
+    }
+  }
+  .contacts__mail{
+    padding-right: 0;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
 @media(max-width: 850px) {
@@ -154,6 +205,10 @@
     ul {
       padding: 0;
     }
+  }
+  .titleh3,
+  .residence__item-text {
+    padding-left: 0;
   }
 
   .residence__item {
@@ -191,7 +246,8 @@
   .video__media {
     display: none;
   }
-  .atv__img{
+
+  .atv__img {
     display: none;
   }
 
@@ -252,6 +308,104 @@
     top: 124px;
     margin-left: -10px;
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.contacts__box{
+  flex-wrap: wrap;
+}
+.contacts__items-text{
+  margin-left: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+@media(max-width: 500px) {
+
+
+
+
+
+
+
+
+
+
+
+
+.contacts__inner{
+  justify-content: center;
+}
+
+.contacts__phone{
+  width: 300px;
+  justify-content: center;
+}
+.contacts__item{
+  width: 300px;
+}
+
+.contacts__mail{
+  width: 100%;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
 @media(max-width: 450px) {

@@ -274,8 +274,8 @@
 }
 
 .transfers__price-text {
-  font-size: 24px;
-  line-height: 28px;
+  font-size: 21px;
+  line-height: 22px;
   margin-bottom: 30px;
 }
 
@@ -284,16 +284,12 @@
   color: $main;
 }
 
-
-
 .transfers__gallery {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
   padding-top: 50px;
 }
-
-
 
 .transfers__gallery-text {
   position: absolute;
@@ -499,6 +495,82 @@
 }
 // end section atv
 
+// start section contacts
+
+.contacts{
+  background-color: $text-fff;
+}
+.contacts__text{
+  margin-bottom: 30px;
+}
+.contacts__form{
+  margin-bottom: 50px;
+}
+.contacts__box{
+  max-width: 1144px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.contacts__inner{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.contacts__items,
+.contacts__items-text {
+  max-width: 544px;
+  width: 100%;
+  padding: 14px 25px;
+  background-color: #fff;
+  font-size: 18px;
+  line-height: 21px;
+  color: $dark-blue;
+  border: 1px solid $main;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  &::placeholder{
+    color: #D1D1D1;
+    font-size: 18px;
+    line-height: 21px;
+  }
+}
+.contacts__items-text{
+  margin-left: 10px;
+  resize: none;
+}
+.conatcts__btn{
+  margin: 0 auto;
+  display: flex;
+}
+.contacts__phone,
+.contacts__item {
+  width: 50%;
+}
+.contacts__phone{
+  display: flex;
+  flex-wrap: wrap;
+}
+.contacts__phone-btn{
+  background-color: transparent;
+  border: 2px solid $main;
+  color: $main;
+  &+.contacts__phone-btn{
+    margin-left: 35px;
+  }
+}
+.contacts__item{
+  display: flex;
+  justify-content: flex-end;
+  text-align: right;
+  align-items: center;
+  flex-wrap: wrap;
+
+}
+.contacts__mail{
+  padding-right: 35px;
+}
+// end section contacts
 
 
 // font-family: 'Roboto Condensed',

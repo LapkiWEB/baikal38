@@ -268,10 +268,6 @@
   border-bottom: 2px solid $text-fff;
 }
 
-.transfers__items-last {
-  border: none;
-}
-
 .transfers__items-title {
   color: $text-fff;
 }
@@ -293,23 +289,10 @@
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  padding-top: 50px;
 }
 
-.transfers__gallery-item {
-  filter: drop-shadow(0px 0px 26.8816px #000000);
-  border-radius: 5px;
-  margin: 0 10px 50px;
-  max-width: 387px;
-  max-height: 275px;
 
-  img {
-    border: 1px solid #fff;
-    width: 387px;
-    height: 275px;
-    border-radius: 5px;
-    position: relative;
-  }
-}
 
 .transfers__gallery-text {
   position: absolute;
@@ -410,7 +393,11 @@
 }
 
 
-
+.residence__gallery {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
 
 
 

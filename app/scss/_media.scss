@@ -107,7 +107,11 @@
     padding-bottom: 30px;
   }
 }
-
+@media(max-width: 900px) {
+  .transfers__gallery{
+    display: none;
+  }
+}
 @media(max-width: 850px) {
   .header__title {
     max-width: 305px;
@@ -174,9 +178,6 @@
     display: none;
   }
 
-
-
-
 }
 
 @media(max-width: 700px) {
@@ -195,17 +196,7 @@
     padding: 14px 25px;
   }
 
-  .transfers__gallery-item {
-    width: 246px;
-    height: 175px;
-
-    img {
-      width: 246px;
-      height: 175px;
-    }
-  }
-
-  .global__gallery-item {
+  .gallery-style {
     width: 246px;
     height: 175px;
 

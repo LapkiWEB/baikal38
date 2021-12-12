@@ -135,17 +135,7 @@ body {
   line-height: 21px;
 }
 
-.global__gallery {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.global__gallery-item {
+.gallery-style {
   -webkit-filter: drop-shadow(0px 0px 26.8816px #000000);
           filter: drop-shadow(0px 0px 26.8816px #000000);
   border-radius: 5px;
@@ -153,7 +143,7 @@ body {
   max-width: 387px;
   max-height: 275px;
 }
-.global__gallery-item img {
+.gallery-style img {
   border: 1px solid #fff;
   width: 387px;
   height: 275px;
@@ -505,10 +495,6 @@ body {
   border-bottom: 2px solid #E5E9EE;
 }
 
-.transfers__items-last {
-  border: none;
-}
-
 .transfers__items-title {
   color: #E5E9EE;
 }
@@ -532,22 +518,7 @@ body {
       justify-content: space-around;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-}
-
-.transfers__gallery-item {
-  -webkit-filter: drop-shadow(0px 0px 26.8816px #000000);
-          filter: drop-shadow(0px 0px 26.8816px #000000);
-  border-radius: 5px;
-  margin: 0 10px 50px;
-  max-width: 387px;
-  max-height: 275px;
-}
-.transfers__gallery-item img {
-  border: 1px solid #fff;
-  width: 387px;
-  height: 275px;
-  border-radius: 5px;
-  position: relative;
+  padding-top: 50px;
 }
 
 .transfers__gallery-text {
@@ -642,6 +613,16 @@ body {
 .residence__btn {
   margin-left: 90px;
   margin-top: 50px;
+}
+
+.residence__gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 @media (max-width: 1200px) {
@@ -740,6 +721,11 @@ body {
     padding-bottom: 30px;
   }
 }
+@media (max-width: 900px) {
+  .transfers__gallery {
+    display: none;
+  }
+}
 @media (max-width: 850px) {
   .header__title {
     max-width: 305px;
@@ -815,20 +801,11 @@ body {
     padding: 14px 25px;
   }
 
-  .transfers__gallery-item {
+  .gallery-style {
     width: 246px;
     height: 175px;
   }
-  .transfers__gallery-item img {
-    width: 246px;
-    height: 175px;
-  }
-
-  .global__gallery-item {
-    width: 246px;
-    height: 175px;
-  }
-  .global__gallery-item img {
+  .gallery-style img {
     width: 246px;
     height: 175px;
   }

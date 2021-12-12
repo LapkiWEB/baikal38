@@ -435,7 +435,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-bottom: 1px solid #E5E9EE;
+  border-bottom: 2px solid #E5E9EE;
   padding-bottom: 30px;
 }
 
@@ -470,6 +470,71 @@ body {
 }
 .transfers__contacts--text {
   padding: 10px 0;
+}
+
+.transfers__items {
+  padding: 30px 0;
+  text-align: center;
+  border-bottom: 2px solid #E5E9EE;
+}
+
+.transfers__items-last {
+  border: none;
+}
+
+.transfers__items-title {
+  color: #E5E9EE;
+}
+
+.transfers__price-text {
+  font-size: 24px;
+  line-height: 28px;
+  margin-bottom: 30px;
+}
+
+.transfers__btn {
+  background-color: #E5E9EE;
+  color: #2F516D;
+}
+
+.transfers__gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.transfers__gallery-item {
+  -webkit-filter: drop-shadow(0px 0px 26.8816px #000000);
+          filter: drop-shadow(0px 0px 26.8816px #000000);
+  border-radius: 5px;
+  margin: 0 10px 50px;
+  max-width: 387px;
+  max-height: 275px;
+}
+.transfers__gallery-item img {
+  border: 1px solid #fff;
+  width: 387px;
+  height: 275px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.transfers__gallery-text {
+  position: absolute;
+  bottom: 10px;
+  text-align: center;
+  width: 100%;
+  color: #2F516D;
+  padding: 9px 0;
+  background-color: rgba(255, 255, 255, 0.7);
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
 }
 
 @media (max-width: 1200px) {
@@ -534,6 +599,11 @@ body {
     font-size: 20px;
     line-height: 22px;
   }
+
+  .transfers__price-text {
+    font-size: 18px;
+    line-height: 21px;
+  }
 }
 @media (max-width: 850px) {
   .header__title {
@@ -578,14 +648,28 @@ body {
     display: none;
   }
 }
-@media (max-width: 750px) {
+@media (max-width: 700px) {
   .header__box {
     max-width: 380px;
   }
 }
-@media (max-width: 420px) {
+@media (max-width: 450px) {
   .header__box {
     max-width: 300px;
     padding: 14px 25px;
+  }
+
+  .transfers__gallery-item {
+    width: 246px;
+    height: 175px;
+  }
+  .transfers__gallery-item img {
+    width: 246px;
+    height: 175px;
+  }
+
+  .transfers__gallery-text {
+    font-size: 18px;
+    line-height: 21px;
   }
 }

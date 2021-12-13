@@ -1,6 +1,6 @@
    $(function () {
 
-    new WOW().init();
+     new WOW().init();
 
      $('.menu__btn').on('click', (function () {
        if (!$('.header__inner').hasClass('openDone')) {
@@ -44,4 +44,21 @@
      });
 
      $(".link-popup").magnificPopup();
+
+     const anchors = document.querySelectorAll('a[href*="#"]')
+
+     for (let anchor of anchors) {
+       anchor.addEventListener("click", function (event) {
+         event.preventDefault();
+         const blockID = anchor.getAttribute('href')
+         document.querySelector('' + blockID).scrollIntoView({
+           behavior: "smooth",
+           block: "start"
+         })
+       })
+     }
+
+
+
+     
    })

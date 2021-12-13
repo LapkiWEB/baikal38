@@ -9,7 +9,6 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background-image: url(../images/content/header-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -228,9 +227,7 @@
 
 .transfers__title {
   color: $text-fff;
-
   padding-left: 90px;
-
 }
 
 .transfers__inner {
@@ -277,7 +274,6 @@
 
 .transfers__items-title {
   color: #fff;
-  // color: $text-fff;
 }
 
 .transfers__price-text {

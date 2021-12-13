@@ -1,12 +1,6 @@
 html,
 body {
   height: 100%;
-  //   @extend %AnPro-Regular;
-  //   color: $text;
-  // position: relative;
-  // overflow-x: hidden;
-  // margin: 0 auto;
-  //   background-color: $background;
   font-family: 'Roboto',
     sans-serif;
   color: $dark-blue;
@@ -125,14 +119,14 @@ body {
   position: absolute;
   right: 0px;
   top: 164px;
-  margin-right: 40px;
+  margin-right: 20px;
 }
 
 .slick-prev {
   top: 164px;
   z-index: 1;
   position: absolute;
-  margin-left: -35px;
+  margin-left: 20px;
 }
 
 .slick-arrow {
@@ -157,17 +151,6 @@ body {
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
 // MOB MENU
 
 
@@ -179,7 +162,6 @@ body {
   bottom: 0;
   width: 320px;
   background-color: $main;
-  // min-height: 500px;
   min-height: 100vh;
   display: flex;
   align-items: flex-start;

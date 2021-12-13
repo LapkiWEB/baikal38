@@ -17,8 +17,8 @@
 
 
      $('.excursion__slider-inner').slick({
-       prevArrow: '<button class="slick-arrow slick-prev"><div class="hand"><img src="images/icons/slider-left.png" alt=""></div></button>',
-       nextArrow: '<button class="slick-arrow slick-next"><div class="hand"><img src="images/icons/slider-right.png" alt=""></div></button>',
+       prevArrow: document.querySelector('.slick-prev'),
+       nextArrow: document.querySelector('.slick-next'),
        infinite: true,
        slidesToShow: 3,
        slidesToScroll: 1,

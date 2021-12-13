@@ -4441,14 +4441,14 @@ body {
   position: absolute;
   right: 0px;
   top: 164px;
-  margin-right: 40px;
+  margin-right: 20px;
 }
 
 .slick-prev {
   top: 164px;
   z-index: 1;
   position: absolute;
-  margin-left: -35px;
+  margin-left: 20px;
 }
 
 .slick-arrow {
@@ -4546,7 +4546,6 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-image: url(../images/content/header-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -5634,7 +5633,7 @@ body {
   }
 
   .excursion__wrapper {
-    position: inherit;
+    position: relative;
   }
 
   .gallery-style {
@@ -5656,12 +5655,12 @@ body {
 
   .slick-next {
     top: 122px;
-    margin-right: -10px;
+    margin-right: 20px;
   }
 
   .slick-prev {
     top: 124px;
-    margin-left: -10px;
+    margin-left: 20px;
   }
 
   .footer__mail {

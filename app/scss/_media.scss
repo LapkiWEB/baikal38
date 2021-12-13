@@ -158,17 +158,6 @@
     display: none;
   }
 
-  // POPUP GLOBAL
-  // POPUP GLOBAL
-  // POPUP GLOBAL
-  // POPUP GLOBAL
-  // POPUP GLOBAL
-  // POPUP GLOBAL
-  // POPUP GLOBAL
-  // POPUP GLOBAL
-  // POPUP GLOBAL
-
-
   .contacts__phone-btn,
   .popup__phone-btn {
     margin-bottom: 30px;
@@ -201,17 +190,6 @@
   .popup__mail {
     padding-right: 0;
   }
-
-
-
-  // POPUP GLOBAL
-  // POPUP GLOBAL
-  // POPUP GLOBAL
-  // POPUP GLOBAL
-  // POPUP GLOBAL
-  // POPUP GLOBAL
-  // POPUP GLOBAL
-  // POPUP GLOBAL
 
 
 }
@@ -338,7 +316,8 @@
   }
 
   .excursion__wrapper {
-    position: inherit;
+    // position: inherit;
+    position: relative;
   }
 
   .gallery-style {
@@ -361,27 +340,17 @@
 
   .slick-next {
     top: 122px;
-    margin-right: -10px;
+    margin-right: 20px;
   }
 
   .slick-prev {
     top: 124px;
-    margin-left: -10px;
+    margin-left: 20px;
   }
 
   .footer__mail {
     margin-bottom: 30px;
   }
-
-  // POPUP GLOBAL
-  // POPUP GLOBAL
-  // POPUP GLOBAL
-  // POPUP GLOBAL
-  // POPUP GLOBAL
-  // POPUP GLOBAL
-  // POPUP GLOBAL
-  // POPUP GLOBAL
-
 
   .contacts__box,
   .popup__box {
@@ -393,28 +362,9 @@
     margin-left: 0;
   }
 
-
-  // POPUP GLOBAL
-  // POPUP GLOBAL
-  // POPUP GLOBAL
-  // POPUP GLOBAL
-  // POPUP GLOBAL
-  // POPUP GLOBAL
-  // POPUP GLOBAL
-  // POPUP GLOBAL
-
 }
 
 @media(max-width: 500px) {
-
-  // POPUP GLOBAL
-  // POPUP GLOBAL
-  // POPUP GLOBAL
-  // POPUP GLOBAL
-  // POPUP GLOBAL
-  // POPUP GLOBAL
-  // POPUP GLOBAL
-
 
   .popup__inner,
   .contacts__inner {
@@ -437,16 +387,6 @@
     width: 100%;
     text-align: center;
   }
-
-  // POPUP GLOBAL
-  // POPUP GLOBAL
-  // POPUP GLOBAL
-  // POPUP GLOBAL
-  // POPUP GLOBAL
-  // POPUP GLOBAL
-  // POPUP GLOBAL
-  // POPUP GLOBAL
-
 }
 
 @media(max-width: 450px) {

@@ -44,9 +44,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  // position: relative;
-
 }
 
 .header__inner {
@@ -223,6 +220,7 @@
 
 .transfers__title {
   color: $text-fff;
+
   padding-left: 90px;
 
 }
@@ -259,7 +257,7 @@
   align-items: center;
 
   &--text {
-    padding: 10px 0;
+    margin-bottom: 20px;
   }
 }
 
@@ -270,7 +268,8 @@
 }
 
 .transfers__items-title {
-  color: $text-fff;
+  color: #fff;
+  // color: $text-fff;
 }
 
 .transfers__price-text {
@@ -450,9 +449,10 @@
 // end section excursion
 
 // start section atv
-.atv{
+.atv {
   background-color: $main;
 }
+
 .atv__wrapper {
   display: flex;
   justify-content: space-between;
@@ -479,44 +479,53 @@
   line-height: 28px;
   margin-bottom: 30px;
 }
-.atv__btn{
+
+.atv__btn {
   background-color: $text-fff;
   color: $dark-blue;
 }
-.atv__img{
+
+.atv__img {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
-  img{
+
+  img {
     width: 384px;
     height: 294px;
   }
 }
+
 // end section atv
 
 // start section contacts
 
-.contacts{
+.contacts {
   background-color: $text-fff;
 }
-.contacts__text{
+
+.contacts__text {
   margin-bottom: 30px;
 }
-.contacts__form{
+
+.contacts__form {
   margin-bottom: 50px;
 }
-.contacts__box{
+
+.contacts__box {
   max-width: 1144px;
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
-.contacts__inner{
+
+.contacts__inner {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
+
 .contacts__items,
 .contacts__items-text {
   max-width: 544px;
@@ -529,37 +538,45 @@
   border: 1px solid $main;
   border-radius: 5px;
   margin-bottom: 30px;
-  &::placeholder{
+
+  &::placeholder {
     color: #D1D1D1;
     font-size: 18px;
     line-height: 21px;
   }
 }
-.contacts__items-text{
+
+.contacts__items-text {
   margin-left: 10px;
   resize: none;
 }
-.conatcts__btn{
+
+.conatcts__btn {
   margin: 0 auto;
   display: flex;
 }
+
 .contacts__phone,
 .contacts__item {
   width: 50%;
 }
-.contacts__phone{
+
+.contacts__phone {
   display: flex;
   flex-wrap: wrap;
 }
-.contacts__phone-btn{
+
+.contacts__phone-btn {
   background-color: transparent;
   border: 2px solid $main;
   color: $main;
-  &+.contacts__phone-btn{
+
+  &+.contacts__phone-btn {
     margin-left: 35px;
   }
 }
-.contacts__item{
+
+.contacts__item {
   display: flex;
   justify-content: flex-end;
   text-align: right;
@@ -567,15 +584,90 @@
   flex-wrap: wrap;
 
 }
-.contacts__mail{
+
+.contacts__mail {
   padding-right: 35px;
 }
+
 // end section contacts
 
 
-// font-family: 'Roboto Condensed',
-// sans-serif;
-// font-weight: 400px;
+// start footer
+
+.footer {
+  background-color: $main;
+  color: $text-fff;
+  padding: 30px 0;
+}
+
+.footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.footer__content {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding: 0 30px;
+}
+
+.footer__box-menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__box-menu--item {
+  padding: 0 15px;
+}
+
+.footer__menu-list {
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  width: 225px;
+}
+
+.footer__item {
+  padding: 0 15px;
+  width: 220px;
+}
+
+.footer__text {
+  margin-bottom: 30px;
+}
+
+.footer__mail {
+  margin-bottom: 30px;
+}
+
+.footer__btn {
+  margin-bottom: 30px;
+  background-color: $text-fff;
+  color: $dark-blue;
+}
+ .footer__item-social {
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+ }
+
+// end footer
+
+
+.mardvey {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+}
+
+.mardvey__link {
+  font-family: 'Roboto Condensed',
+    sans-serif;
+  font-weight: 400;
+  letter-spacing: 3px;
+}
 
 
 @import 'media';

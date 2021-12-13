@@ -1,5 +1,7 @@
    $(function () {
 
+    new WOW().init();
+
      $('.menu__btn').on('click', (function () {
        if (!$('.header__inner').hasClass('openDone')) {
          $('.header__inner').addClass('openDone');

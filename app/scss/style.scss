@@ -103,12 +103,15 @@
   display: inline-block;
   position: relative;
   padding-bottom: 18px;
+  transition: all .3s;
 
   &+.menu__list {
     margin-left: 70px;
   }
 
   &:hover {
+    color: #fff;
+
     .sub-menu {
       display: block;
       z-index: 10;
@@ -133,6 +136,11 @@
 .sub-menu__list {
   z-index: 15;
   margin-bottom: 10px;
+  transition: all .3s;
+  &:hover{
+    background-color: $text-fff;
+    color: $dark-blue;
+  }
 }
 
 .menu__btn {
@@ -579,7 +587,7 @@
 .contacts__phone-btn,
 .popup__phone-btn {
   background-color: transparent;
-  border: 2px solid $main;
+  border: 1px solid $main;
   color: $main;
 
   &+.contacts__phone-btn {
@@ -697,8 +705,15 @@
   background: rgba(229, 233, 238, 0.8);
   backdrop-filter: blur(5px);
 }
-.mfp-container{
+
+.mfp-container {
   height: 100vh;
 }
 
 @import 'media';
+
+
+
+// data-wow-offset="150"
+
+// data-wow-delay="0.2s"

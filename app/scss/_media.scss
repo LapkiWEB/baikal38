@@ -43,7 +43,8 @@
     }
 
   }
-  .footer__item-phone{
+
+  .footer__item-phone {
     width: 250px;
   }
 
@@ -168,19 +169,24 @@
   // POPUP GLOBAL
 
 
-  .contacts__phone-btn {
+  .contacts__phone-btn,
+  .popup__phone-btn {
     margin-bottom: 30px;
-
     &+.contacts__phone-btn {
+      margin-left: 0;
+    }
+    &+.popup__phone-btn {
       margin-left: 0;
     }
   }
 
-  .contacts__phone {
+  .contacts__phone,
+  .popup__phone {
     width: 200px;
   }
 
-  .contacts__item {
+  .contacts__item, 
+  .popup__item {
     padding-top: 10px;
     width: 200px;
     justify-content: center;
@@ -191,7 +197,8 @@
     }
   }
 
-  .contacts__mail {
+  .contacts__mail,
+  .popup__mail {
     padding-right: 0;
   }
 
@@ -376,10 +383,12 @@
   // POPUP GLOBAL
 
 
-  .contacts__box {
+  .contacts__box,
+  .popup__box {
     flex-wrap: wrap;
   }
 
+  .popup__items-text,
   .contacts__items-text {
     margin-left: 0;
   }
@@ -407,20 +416,24 @@
   // POPUP GLOBAL
 
 
+  .popup__inner,
   .contacts__inner {
     justify-content: center;
   }
 
-  .contacts__phone {
+  .contacts__phone,
+  .popup__phone {
     width: 300px;
     justify-content: center;
   }
 
-  .contacts__item {
+  .contacts__item,
+  .popup__item {
     width: 300px;
   }
 
-  .contacts__mail {
+  .contacts__mail,
+  .popup__mail {
     width: 100%;
     text-align: center;
   }

@@ -40,4 +40,6 @@
          },
        ]
      });
+
+     $(".link-popup").magnificPopup();
    })

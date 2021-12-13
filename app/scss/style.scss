@@ -509,25 +509,30 @@
   margin-bottom: 30px;
 }
 
-.contacts__form {
+.contacts__form,
+.popup__form {
   margin-bottom: 50px;
 }
 
-.contacts__box {
+.contacts__box,
+.popup__box {
   max-width: 1144px;
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
 
-.contacts__inner {
+.contacts__inner,
+.popup__inner {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 
 .contacts__items,
-.contacts__items-text {
+.contacts__items-text,
+.popup__items,
+.popup__items-text {
   max-width: 544px;
   width: 100%;
   padding: 14px 25px;
@@ -546,27 +551,33 @@
   }
 }
 
-.contacts__items-text {
+.contacts__items-text,
+.popup__items-text {
   margin-left: 10px;
   resize: none;
 }
 
-.conatcts__btn {
+.conatcts__btn,
+.popup__btn {
   margin: 0 auto;
   display: flex;
 }
 
 .contacts__phone,
-.contacts__item {
+.popup__phone,
+.contacts__item,
+.popup__item {
   width: 50%;
 }
 
-.contacts__phone {
+.contacts__phone,
+.popup__phone {
   display: flex;
   flex-wrap: wrap;
 }
 
-.contacts__phone-btn {
+.contacts__phone-btn,
+.popup__phone-btn {
   background-color: transparent;
   border: 2px solid $main;
   color: $main;
@@ -574,9 +585,14 @@
   &+.contacts__phone-btn {
     margin-left: 35px;
   }
+
+  &+.popup__phone-btn {
+    margin-left: 35px;
+  }
 }
 
-.contacts__item {
+.contacts__item,
+.popup__item {
   display: flex;
   justify-content: flex-end;
   text-align: right;
@@ -585,7 +601,8 @@
 
 }
 
-.contacts__mail {
+.contacts__mail,
+.popup__mail {
   padding-right: 35px;
 }
 
@@ -646,11 +663,12 @@
   background-color: $text-fff;
   color: $dark-blue;
 }
- .footer__item-social {
-   display: flex;
-   justify-content: center;
-   flex-wrap: wrap;
- }
+
+.footer__item-social {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
 
 // end footer
 
@@ -669,5 +687,18 @@
   letter-spacing: 3px;
 }
 
+
+.hidden {
+  display: none;
+}
+
+.mfp-bg {
+  opacity: 1;
+  background: rgba(229, 233, 238, 0.8);
+  backdrop-filter: blur(5px);
+}
+.mfp-container{
+  height: 100vh;
+}
 
 @import 'media';

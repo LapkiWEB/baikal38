@@ -4481,7 +4481,7 @@ body {
   display: block;
   position: absolute;
   top: 0;
-  right: -15px;
+  right: 0;
   bottom: 0;
   width: 320px;
   background-color: #2F516D;
@@ -4520,7 +4520,6 @@ body {
 }
 .header__inner.openDone .header-bottom {
   text-align: left;
-  padding: 0;
 }
 .header__inner.openDone .menu {
   color: #fff;
@@ -4533,6 +4532,7 @@ body {
   position: inherit;
   background-color: inherit;
   color: #fff;
+  width: 230px;
   padding: 15px 0px 0px 12px !important;
 }
 
@@ -5582,6 +5582,10 @@ body {
 
   .atv__img {
     display: none;
+  }
+
+  .menu {
+    padding-right: 0;
   }
 }
 @media (max-width: 700px) {

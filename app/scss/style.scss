@@ -393,9 +393,10 @@
 }
 
 
-.residence__gallery {
+.residence__gallery,
+.transfers-car__gallery {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
